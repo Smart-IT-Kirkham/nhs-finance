@@ -1,0 +1,3 @@
+[submodule "odoo/addon-bundles/account-financial-reporting"]
+	path = odoo/addon-bundles/account-financial-reporting
+	url = git@github.com:OCA/account-financial-reporting.git
