@@ -4,3 +4,18 @@
 [submodule "odoo/addon-bundles/reporting-engine"]
 	path = odoo/addon-bundles/reporting-engine
 	url = git@github.com:OCA/reporting-engine.git
+[submodule "odoo/addon-bundles/server-ux"]
+	path = odoo/addon-bundles/server-ux
+	url = git@github.com:OCA/server-ux.git
+[submodule "odoo/addon-bundles/Odoo-Uk-Accounting"]
+	path = odoo/addon-bundles/Odoo-Uk-Accounting
+	url = git@github.com:OpusVL/Odoo-Uk-Accounting.git
+[submodule "odoo/addon-bundles/Odoo-UK-Format-Reports"]
+	path = odoo/addon-bundles/Odoo-UK-Format-Reports
+	url = git@github.com:OpusVL/Odoo-UK-Format-Reports.git
+[submodule "odoo/addon-bundles/mtd"]
+	path = odoo/addon-bundles/mtd
+	url = git@github.com:OpusVL/mtd.git
+[submodule "odoo/addon-bundles/odoo-form-width-increase"]
+	path = odoo/addon-bundles/odoo-form-width-increase
+	url = git@github.com:OpusVL/odoo-form-width-increase.git
