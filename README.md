@@ -1,6 +1,6 @@
 # Odoo NHS-Finance Repository
 
-This is the repository for Odoo Open Source - NHS Finance Edition
+This is the repository for **Odoo Open Source - NHS Finance Edition**.
 
 Designed in collaboration with NHS stakeholders, **Odoo Open Source - NHS Finance Edition** is a fully-featured accounting system meeting the specific needs of NHS organisations.
 
