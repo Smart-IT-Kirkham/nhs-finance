@@ -20,7 +20,7 @@ while read -r line; do
   fi
 done <<<"$COMMAND"
 
-MODULES_TO_UPGRADE="billing,op_import_data"
+MODULES_TO_UPGRADE=""
 
 docker-compose pull odoo
 
