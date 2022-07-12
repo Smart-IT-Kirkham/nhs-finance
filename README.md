@@ -17,7 +17,7 @@ For full details, please see <https://nhs.odoo.uk>.
 If you require assistance, support, or further development of this
 software, please contact OpusVL using the details below:
 
-* Telephone: +44 (0)1788 298 410
+* Telephone: +44 (0)1788 298 450
 * Email: hello@opusvl.com
 * Web: https://opusvl.com
 
