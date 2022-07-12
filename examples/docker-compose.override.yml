@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  odoo:
+    volumes:
+    - ${PWD}/odoo/addon-bundles:/mnt/extra-addons-bundles
+    - ~/tools/pycharm-debug:/mnt/pycharm-debug
+
+  smtp:
+    image: hauptmedia/mailcatcher
+    environment:
+      MAILCATCHER_USERNAME: mailcatcher
+      MAILCATCHER_PASSWORD: mailcatcher
+    ports:
+      - ${ODOO_SMTP_PORT_25}:25
+      - ${ODOO_SMTP_PORT_143}:143
+      - ${ODOO_SMTP_PORT_80}:80
+    depends_on:
+      - odoo
+
+  odoo_postgresql:
+    ports:
+    - ${ODOO_POSTGRESQL_PORT}:5432

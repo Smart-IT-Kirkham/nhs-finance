@@ -1,0 +1,1 @@
+FROM quay.io/opusvl/quay.io/opusvl/custom-odoo-13:20191113

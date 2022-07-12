@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  odoo:
+    image: ${ODOO_IMAGE}
+    environment:
+      USER: ${ODOO_POSTGRES_USER}
+      PASSWORD: ${ODOO_POSTGRES_PASSWORD}
+      HOST: odoo_postgresql
+    ports:
+    - ${ODOO_PORT}:8069
+    volumes:
+    - ${ODOO_DATA_VOLUME}:/var/lib/odoo
+    - ./odoo/odoo.conf:/etc/odoo/odoo.conf:ro
+    depends_on:
+      - odoo_postgresql
+
+  odoo_postgresql:
+    image: postgres:9.6
+    environment:
+      POSTGRES_DB: 'postgres'
+      POSTGRES_USER: ${ODOO_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${ODOO_POSTGRES_PASSWORD}
+    volumes:
+    - ${ODOO_POSTGRES_DATA_VOLUME}:/var/lib/postgresql/data
