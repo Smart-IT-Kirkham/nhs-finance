@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="account_payment_method_bacs_out" model="account.payment.method">
+        <field name="name">BACS</field>
+        <field name="code">bacs</field>
+        <field name="payment_type">outbound</field>
+    </record>
+    <record id="account_payment_method_nonbacs_out" model="account.payment.method">
+        <field name="name">Non-BACS</field>
+        <field name="code">nonbacs</field>
+        <field name="payment_type">outbound</field>
+    </record>
+    <function
+        name="configure_payment_methods_on_bank_journals"
+        model="account.journal"
+    />
+</odoo>

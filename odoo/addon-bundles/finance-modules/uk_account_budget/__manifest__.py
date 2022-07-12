@@ -1,0 +1,20 @@
+{
+    "name": "Account Budget",
+    "version": "13.0.0.0.0",
+    "author": "Opus Vision Limited",
+    "website": "https://opusvl.com/",
+    "summary": "Module for Budget Management",
+    "category": "",
+    "images": [],
+    "depends": ["account", "royalmarsden"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/account_budget_views.xml",
+        "report/account_budget_report_view.xml",
+    ],
+    "test": [],
+    "application": True,
+    "license": "AGPL-3",
+    "installable": True,
+    "auto_install": False,
+}

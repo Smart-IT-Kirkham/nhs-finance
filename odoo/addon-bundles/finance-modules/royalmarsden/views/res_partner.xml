@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="view_partner_form_royalmarsden" model="ir.ui.view">
+            <field name="name">res.partner.form.royalmarsden</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form" />
+            <field name="arch" type="xml">
+                <field name="vat" position="after">
+                    <field name="autogenerate_jac_vsr_number" invisible="1" />
+                    <field
+                        name="jac_vsr_number"
+                        attrs="{'readonly': [('autogenerate_jac_vsr_number', '=', True)]}"
+                    />
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
