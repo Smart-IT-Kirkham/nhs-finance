@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="bankline_import_form_view" model="ir.ui.view">
+            <field name="name">account.bankline.import.form</field>
+            <field name="model">account.bankline.import</field>
+            <field name="arch" type="xml">
+                <form string="BANKLINE Import">
+                    <sheet>
+                        <group>
+                            <field name="input_file" filename="input_name" />
+                            <field name="input_name" invisible="1" />
+                        </group>
+                        <h3>
+                            When you click Import, the file will be loaded into Odoo if
+                            all verification checks pass.
+                        </h3>
+                    </sheet>
+                    <footer>
+                        <button
+                            name="import_bankline_file"
+                            type="object"
+                            icon="fa-upload"
+                            attrs="{'invisible': [('input_file', '=', False)]}"
+                            string="Import"
+                            class="oe_highlight"
+                        />
+                        <button string="Close" clas="oe_link" special="cancel" />
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="bankline_import_log_tree_view" model="ir.ui.view">
+            <field name="name">account.bankline.import.log.tree</field>
+            <field name="model">account.bankline.import.log</field>
+            <field name="arch" type="xml">
+                <tree create="false" edit="false" delete="false">
+                    <field name="name" />
+                    <field name="date_of_import" />
+                    <field name="bankline_row_count" />
+                </tree>
+            </field>
+        </record>
+        <act_window
+            id="act_bankline_import"
+            name="Bankline Import"
+            res_model="account.bankline.import"
+            view_mode="form"
+            target="new"
+        />
+        <act_window
+            id="act_bankline_import_log"
+            name="Bankline Import Log"
+            res_model="account.bankline.import.log"
+            view_mode="tree"
+            target="current"
+        />
+        <menuitem
+            id="menu_bankline_import_log"
+            name="Bankline Import Log"
+            parent="account.menu_finance_entries_actions"
+            action="act_bankline_import_log"
+            sequence="2"
+            groups="account.group_account_manager"
+        />
+        <menuitem
+            id="menu_bankline_import_wizard"
+            name="Bankline Import"
+            action="act_bankline_import"
+            parent="account.menu_finance_entries_actions"
+            groups="account.group_account_manager"
+            sequence="1"
+        />
+    </data>
+</odoo>

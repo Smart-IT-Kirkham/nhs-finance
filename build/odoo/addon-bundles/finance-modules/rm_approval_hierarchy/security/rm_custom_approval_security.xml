@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.module.category" id="module_category_rm_approval_hierarchy">
+        <field name="name">RM Access Rights</field>
+        <field name="sequence">11</field>
+        <field name="visible" eval="0" />
+    </record>
+    <record model="res.groups" id="associate_director_finance_role">
+        <field name="name">Associate Director of Finance</field>
+        <field name="comment">
+            If checked the user will have rights as an
+            associate director of finance
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_invoice'),
+          ref('account_mtd.mtd_admin'),
+          ref('account_mtd_vat.mtd_vat_admin')
+          ])]"
+        />
+    </record>
+    <record model="res.groups" id="head_financial_management_role">
+        <field name="name">Head of Financial Management</field>
+        <field name="comment">
+            If checked the user will have rights as a
+             head of financial management
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_invoice')])]"
+        />
+    </record>
+    <record model="res.groups" id="financial_controller_role">
+        <field name="name">Financial Controller</field>
+        <field name="comment">
+            If checked the user will have rights as a
+            financial controller
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_invoice'),
+          ref('account_mtd.mtd_admin'),
+          ref('account_mtd_vat.mtd_vat_admin')
+          ])]"
+        />
+    </record>
+    <record model="res.groups" id="financial_accountant_role">
+        <field name="name">Financial Accountant</field>
+        <field name="comment">
+            If checked the user will have rights as a
+            financial accountant
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_invoice'),
+          ref('account_mtd.mtd_admin'),
+          ref('account_mtd_vat.mtd_vat_admin')
+          ])]"
+        />
+    </record>
+    <record model="res.groups" id="finance_manager_role">
+        <field name="name">Finance Manager</field>
+        <field name="comment">
+            If checked the user will have rights as a
+            finance manager
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_invoice')])]"
+        />
+    </record>
+    <record model="res.groups" id="assistant_financial_accountant_role">
+        <field name="name">Assistant Financial Accountant</field>
+        <field name="comment">
+            If checked the user will have rights as an
+            assistant financial accountant
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_invoice'),
+          ref('account_mtd.mtd_admin'),
+          ref('account_mtd_vat.mtd_vat_admin')
+          ])]"
+        />
+    </record>
+    <record model="res.groups" id="accounts_payable_admin_role">
+        <field name="name">Accounts Payable admin</field>
+        <field name="comment">
+            If checked the user will have rights as an
+            accounts payable admin
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_invoice')])]"
+        />
+    </record>
+    <record model="res.groups" id="system_admin_role">
+        <field name="name">System Admin</field>
+        <field name="comment">
+            If checked the user will have rights as a
+            system admin
+        </field>
+        <field name="rm_approval_group">True</field>
+        <field
+            name="category_id"
+            ref="rm_approval_hierarchy.module_category_rm_approval_hierarchy"
+        />
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+        <field
+            name="implied_ids"
+            eval="[(6, 0, [ref('account.group_account_manager'),
+        ref('account_mtd.mtd_admin'),
+        ref('account_mtd_vat.mtd_vat_admin')])]"
+        />
+    </record>
+    <record model="res.groups" id="account.group_account_invoice">
+        <field
+            name="implied_ids"
+            eval="[(4, ref('analytic.group_analytic_accounting'))]"
+        />
+    </record>
+</odoo>

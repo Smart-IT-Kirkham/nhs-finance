@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="view_hr_job_form_rm_inherit" model="ir.ui.view">
+            <field name="name">hr.job.form.rm.inherit</field>
+            <field name="model">hr.job</field>
+            <field
+                name="inherit_id"
+                ref="approval_hierarchy.view_hr_job_form_inherit"
+            />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='no_of_recruitment']" position="after">
+                    <field name="group_id" options="{'no_create': True}" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

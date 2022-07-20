@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="account.account" id="rm_demo_account_1110">
+            <field name="name">Drugs</field>
+            <field name="code">1110</field>
+            <field name="internal_type">other</field>
+            <field name="internal_group">asset</field>
+            <field name="user_type_id" ref="account.data_account_type_current_assets" />
+        </record>
+    </data>
+</odoo>

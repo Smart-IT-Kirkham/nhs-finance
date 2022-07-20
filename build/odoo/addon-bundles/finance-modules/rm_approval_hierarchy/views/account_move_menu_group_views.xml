@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <!--    Menu Root Customers-->
+        <record model="ir.ui.menu" id="account.menu_finance_receivables">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Invoices-->
+        <record model="ir.ui.menu" id="account.menu_action_move_out_invoice_type">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Credit Notes-->
+        <record model="ir.ui.menu" id="account.menu_action_move_out_refund_type">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Receipts-->
+        <record model="ir.ui.menu" id="account.menu_action_move_out_receipt_type">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Payments-->
+        <record model="ir.ui.menu" id="account.menu_action_account_payments_receivable">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Products-->
+        <record model="ir.ui.menu" id="account.product_product_menu_sellable">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Customers-->
+        <record model="ir.ui.menu" id="account.menu_account_customer">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Vendors-->
+        <record model="ir.ui.menu" id="account.menu_finance_payables">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Bills-->
+        <record model="ir.ui.menu" id="account.menu_action_move_in_invoice_type">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    JAC Import-->
+        <record model="ir.ui.menu" id="royalmarsden.menu_jac_import_wizard">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    JAC Import Log-->
+        <record model="ir.ui.menu" id="royalmarsden.menu_jac_import_log">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Refund-->
+        <record model="ir.ui.menu" id="account.menu_action_move_in_refund_type">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Receipts-->
+        <record model="ir.ui.menu" id="account.menu_action_move_in_receipt_type">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Payments-->
+        <record model="ir.ui.menu" id="account.menu_action_account_payments_payable">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Products-->
+        <record model="ir.ui.menu" id="account.product_product_menu_purchasable">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Vendors-->
+        <record model="ir.ui.menu" id="account.menu_account_supplier">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Accounting-->
+        <record model="ir.ui.menu" id="account.menu_finance_entries">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Miscellaneous-->
+        <record
+            model="ir.ui.menu"
+            id="account.menu_finance_entries_accounting_miscellaneous"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Journals-->
+        <record
+            model="ir.ui.menu"
+            id="account.menu_finance_entries_accounting_journals"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Ledgers-->
+        <record model="ir.ui.menu" id="account.menu_finance_entries_accounting_ledgers">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Management-->
+        <record model="ir.ui.menu" id="account.menu_finance_entries_management">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Actions-->
+        <record model="ir.ui.menu" id="account.menu_finance_entries_actions">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Journal Entries-->
+        <record model="ir.ui.menu" id="account.menu_action_move_journal_line_form">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Journal Items-->
+        <record model="ir.ui.menu" id="account.menu_action_account_moves_all">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Sales-->
+        <record model="ir.ui.menu" id="account.menu_action_account_moves_journal_sales">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Purchases-->
+        <record
+            model="ir.ui.menu"
+            id="account.menu_action_account_moves_journal_purchase"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Bank & Cash-->
+        <record
+            model="ir.ui.menu"
+            id="account.menu_action_account_moves_journal_bank_cash"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Miscellaneous-->
+        <record model="ir.ui.menu" id="account.menu_action_account_moves_journal_misc">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Bankline Import-->
+        <record model="ir.ui.menu" id="royalmarsden.menu_bankline_import_wizard">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role'),
+                   ref('approval_hierarchy.import_bank_statement_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Bankline Import Log-->
+        <record model="ir.ui.menu" id="royalmarsden.menu_bankline_import_log">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role'),
+                   ref('approval_hierarchy.import_bank_statement_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    General Ledger-->
+        <record
+            model="ir.ui.menu"
+            id="account.menu_action_account_moves_ledger_general"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Partner Ledger-->
+        <record
+            model="ir.ui.menu"
+            id="account.menu_action_account_moves_ledger_partner"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Analytic Items-->
+        <record model="ir.ui.menu" id="account.menu_action_analytic_lines_tree">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <record id="view_account_analytic_line_tree_inherit" model="ir.ui.view">
+            <field name="name">account.analytic.line.tree.inherit</field>
+            <field name="model">account.analytic.line</field>
+            <field name="inherit_id" ref="analytic.view_account_analytic_line_tree" />
+            <field name="arch" type="xml">
+                <tree position="attributes">
+                    <attribute name="create">false</attribute>
+                    <attribute name="edit">false</attribute>
+                </tree>
+            </field>
+        </record>
+        <!--    Budgets-->
+        <record
+            model="ir.ui.menu"
+            id="uk_account_budget.menu_action_account_budget_view"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Reconciliation-->
+        <record model="ir.ui.menu" id="account.menu_action_manual_reconciliation">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ])]"
+            />
+        </record>
+        <!--    Budget Analysis-->
+        <record
+            model="ir.ui.menu"
+            id="uk_account_budget.menu_action_account_budget_report_view"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Tax Adjustments-->
+        <record model="ir.ui.menu" id="account.menu_action_tax_adjustment">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role')
+                   ])]"
+            />
+        </record>
+
+        <!--    Menu Root Reporting-->
+        <record model="ir.ui.menu" id="account.menu_finance_reports">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root Management-->
+        <record model="ir.ui.menu" id="account.account_reports_management_menu">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Invoices-->
+        <record model="ir.ui.menu" id="account.menu_action_account_invoice_report_all">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Menu Root OCA Accounting Reports-->
+        <record model="ir.ui.menu" id="account_financial_report.menu_oca_reports">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    General Ledger-->
+        <record
+            model="ir.ui.menu"
+            id="account_financial_report.menu_general_ledger_wizard"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Journal Ledger-->
+        <record
+            model="ir.ui.menu"
+            id="account_financial_report.menu_journal_ledger_wizard"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Trial Balance-->
+        <record
+            model="ir.ui.menu"
+            id="account_financial_report.menu_trial_balance_wizard"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Open Items-->
+        <record model="ir.ui.menu" id="account_financial_report.menu_open_items_wizard">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Aged Partner Balance-->
+        <record
+            model="ir.ui.menu"
+            id="account_financial_report.menu_aged_partner_balance_wizard"
+        >
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.accounts_payable_admin_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--    Vat Report-->
+        <record model="ir.ui.menu" id="account_financial_report.menu_vat_report_wizard">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.associate_director_finance_role'),
+                   ref('rm_approval_hierarchy.head_financial_management_role'),
+                   ref('rm_approval_hierarchy.financial_controller_role'),
+                   ref('rm_approval_hierarchy.financial_accountant_role'),
+                   ref('rm_approval_hierarchy.finance_manager_role'),
+                   ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+                   ref('rm_approval_hierarchy.system_admin_role')
+                   ])]"
+            />
+        </record>
+        <!--   Menu Root Configuration-->
+        <record model="ir.ui.menu" id="account.menu_finance_configuration">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [ref('rm_approval_hierarchy.system_admin_role')])]"
+            />
+        </record>
+        <!--   Menu Root Making Tax Digital-->
+        <record model="ir.ui.menu" id="account_mtd.mtd_menu">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [
+             ref('rm_approval_hierarchy.associate_director_finance_role'),
+             ref('rm_approval_hierarchy.financial_controller_role'),
+             ref('rm_approval_hierarchy.financial_accountant_role'),
+             ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+             ref('rm_approval_hierarchy.system_admin_role')])]"
+            />
+        </record>
+        <!--   Menu Root Assets-->
+        <record model="ir.ui.menu" id="uk_account_asset.menu_assets">
+            <field
+                name="groups_id"
+                eval="[(6, 0, [
+             ref('rm_approval_hierarchy.financial_controller_role'),
+             ref('rm_approval_hierarchy.financial_accountant_role'),
+             ref('rm_approval_hierarchy.assistant_financial_accountant_role'),
+             ref('rm_approval_hierarchy.system_admin_role')])]"
+            />
+        </record>
+    </data>
+</odoo>

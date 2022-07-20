@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="view_bank_statement_rm_inherit" model="ir.ui.view">
+            <field name="name">view.bank.statement.rm.inherit</field>
+            <field name="model">account.bank.statement</field>
+            <field name="inherit_id" ref="account.view_bank_statement_form" />
+            <field name="arch" type="xml">
+                <xpath
+                    expr="//field[@name='line_ids']/tree/field[@name='state']"
+                    position="after"
+                >
+                    <field name="narrative_one" />
+                    <field name="narrative_two" />
+                    <field name="narrative_three" />
+                    <field name="narrative_four" />
+                    <field name="narrative_five" />
+                    <field
+                        name="line_type_id"
+                        options="{'no_create': True}"
+                        string="Type"
+                    />
+                </xpath>
+            </field>
+        </record>
+        <!-- Line Types -->
+        <record id="view_bank_statement_line_type_tree" model="ir.ui.view">
+            <field name="name">bank.statement.line.type.tree</field>
+            <field name="model">bank.statement.line.type</field>
+            <field name="arch" type="xml">
+                <tree string="Bank Statement Lines Type" editable="top">
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_bank_statement_line_type_search" model="ir.ui.view">
+            <field name="name">bank.statement.line.type.search</field>
+            <field name="model">bank.statement.line.type</field>
+            <field name="arch" type="xml">
+                <search string="Search Bank Statement Lines Type">
+                    <field name="name" />
+                </search>
+            </field>
+        </record>
+        <act_window
+            id="action_bank_statement_line_type"
+            name="Bank Statement Lines Type"
+            res_model="bank.statement.line.type"
+            view_mode="tree"
+            target="current"
+        />
+        <menuitem
+            action="action_bank_statement_line_type"
+            id="menu_bank_statement_line_type"
+            parent="account.root_payment_menu"
+            groups="account.group_account_invoice"
+            sequence="3"
+        />
+    </data>
+</odoo>
