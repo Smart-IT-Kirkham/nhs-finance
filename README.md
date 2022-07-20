@@ -21,6 +21,12 @@ This project requires:
 
 ## Usage
 
+**NOTE:** Clone this entire repository from github ensuring that you do so recursively as it includes submodules:
+
+```shell
+git clone --recursive git@github.com:OpusVL/nhs-finance.git
+```
+
 Create a `.env` file containing the two required variables as detailed below - change the passwords as necessary. You can leave out the optional variables:
 
 ```shell
@@ -40,7 +46,7 @@ POSTGRES_USER=postgres
 WORKERS=4
 ```
 
-Edit he `odoo.conf` file and change the `admin_passwd` to something more suitable. This is the Odoo "Master Password" used for database management.
+Edit he `odoo.conf` file and change the `admin_passwd` to something more suitable. This is the Odoo "Master Password" used for database management, and will be needed later when you create an empty database.
 
 ### Initialise the Docker Containers
 
