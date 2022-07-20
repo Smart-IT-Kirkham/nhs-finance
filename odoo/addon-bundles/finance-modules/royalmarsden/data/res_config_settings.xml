@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<odoo>
-    <data>
-        <function model="res.config.settings" name="apply_royalmarsden_config" />
-    </data>
-</odoo>

@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_account_budget,account.budget,model_account_budget,account.group_account_manager,1,0,0,0
-access_account_budget_accountant,account.budget accountant,model_account_budget,account.group_account_user,1,1,1,1
-access_account_budget_line_accountant,account.budget.line accountant,model_account_budget_line,account.group_account_user,1,1,1,1
-access_account.budget_line_manager,account.budget.line manager,model_account_budget_line,base.group_user,1,1,1,0
-access_variance_budget_report_accountant,variance.budget.report accountant,model_variance_budget_report,account.group_account_user,1,1,1,1
-access_variance_budget_report_user,variance.budget.report user,model_variance_budget_report,base.group_user,1,1,1,0
