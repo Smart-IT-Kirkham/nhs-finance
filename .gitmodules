@@ -1,21 +1,28 @@
 [submodule "build/odoo/addon-bundles/odoo-form-width-increase"]
 	path = build/odoo/addon-bundles/odoo-form-width-increase
 	url = https://github.com/OpusVL/odoo-form-width-increase.git
+	branch = 13.0
 [submodule "build/odoo/addon-bundles/mtd"]
 	path = build/odoo/addon-bundles/mtd
 	url = https://github.com/OpusVL/mtd.git
+	branch = 13.0
 [submodule "build/odoo/addon-bundles/Odoo-UK-Format-Reports"]
 	path = build/odoo/addon-bundles/Odoo-UK-Format-Reports
 	url = https://github.com/OpusVL/Odoo-UK-Format-Reports.git
+	branch = 13.0
 [submodule "build/odoo/addon-bundles/Odoo-Uk-Accounting"]
 	path = build/odoo/addon-bundles/Odoo-Uk-Accounting
 	url = https://github.com/OpusVL/Odoo-Uk-Accounting.git
+	branch = 13.0
 [submodule "build/odoo/addon-bundles/server-ux"]
 	path = build/odoo/addon-bundles/server-ux
 	url = https://github.com/OCA/server-ux.git
+	branch = 13.0
 [submodule "build/odoo/addon-bundles/reporting-engine"]
 	path = build/odoo/addon-bundles/reporting-engine
 	url = https://github.com/OCA/reporting-engine.git
+	branch = 13.0
 [submodule "build/odoo/addon-bundles/account-financial-reporting"]
 	path = build/odoo/addon-bundles/account-financial-reporting
 	url = https://github.com/OCA/account-financial-reporting.git
+	branch = 13.0
