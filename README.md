@@ -68,6 +68,15 @@ Access Odoo by visiting the URL [http://localhost](http://localhost) - this will
 
 The first part of setting up Odoo is to use the master password and create a database, specify an email address and a password for the initial "admin" user.
 
+## Minimum Steps to Working System
+
+```shell
+git clone --recursive https://github.com/OpusVL/nhs-finance.git
+cd nhs-finance
+cp example/dotenv .env
+./init.sh
+```
+
 ### Cutomisation
 
 Modify the environment variables in the `.env` file to customise the project behaviour.
