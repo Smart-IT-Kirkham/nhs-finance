@@ -24,7 +24,7 @@ source .env
 docker-compose build && \
 docker-compose up -d db
 
-docker-compose run --rm -u root odoo chown odoo: /var/lib/odoo /mnt/extra-addons -Rv
+docker-compose run --rm -u root odoo chown odoo: /etc/odoo /var/lib/odoo /mnt/extra-addons -Rv
 
 docker-compose run --rm -u root nginx chown 33 /etc/ssl/nginx/ -Rv
 
@@ -32,7 +32,7 @@ docker-compose run --rm -u root nginx chown 33 /etc/ssl/nginx/ -Rv
 docker-compose stop db && docker-compose up -d odoo nginx
 
 echo ""
-echo "Now Odoo has started for the first time you can visit http://localhost:8069 "
+echo "Now Odoo has started for the first time you can visit http://localhost "
 echo "and create a database."
 echo ""
 echo "You will need to use the default Master Password 'changeme' unless you have "
