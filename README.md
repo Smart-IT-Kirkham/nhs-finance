@@ -24,7 +24,7 @@ This project requires:
 **NOTE:** Clone this entire repository from github ensuring that you do so recursively as it includes submodules:
 
 ```shell
-git clone --recursive git@github.com:OpusVL/nhs-finance.git
+git clone --recursive https://github.com/OpusVL/nhs-finance.git
 ```
 
 Create a `.env` file containing the two required variables as detailed below - change the passwords as necessary. You can leave out the optional variables:
