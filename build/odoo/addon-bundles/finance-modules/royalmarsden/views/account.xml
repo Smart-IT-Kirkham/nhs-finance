@@ -86,7 +86,7 @@
                             <field name="account_level_4_id" />
                             <field name="account_level_5_id" />
                             <field name="account_category_id" />
-                            <field name="account_parent_id" />
+                            <!-- <field name="account_parent_id" /> -->
                             <field name="account_glgroup_id" />
                             <field name="account_user_type_id" />
                         </group>
@@ -107,7 +107,7 @@
                         <field name="level_4_id" />
                         <field name="level_5_id" />
                         <field name="category_id" />
-                        <field name="parent_id" />
+                        <!-- <field name="parent_id" /> -->
                         <field name="glgroup_id" />
                     </group>
                 </xpath>
