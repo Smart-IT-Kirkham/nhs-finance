@@ -99,7 +99,7 @@ You should remove the `nginx:` section from `docker-compose.yml` prior to using 
 
 ## Support
 
-This software is provided free of charge for you to explore and try out. If you find a problem, please do raise a [Github issue here](/OpusVL/nhs-finance/issues). Although we will try our best to respond, we make no promises.
+This software is provided free of charge for you to explore and try out. If you find a problem, please do raise a Github issue. Although we will try our best to respond, we make no promises.
 
 If you are using this in production and are looking for a service-level backed contract, or want to ensure that an issue is dealt with, professional services are available. OpusVL provide assistance, support, deployments, high availablilty and development of this software, please make contact using the details below:
 
