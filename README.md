@@ -99,17 +99,17 @@ You should remove the `nginx:` section from `docker-compose.yml` prior to using 
 
 ## Support
 
-This software is provided free of charge for you to explore and try out. If you find a problem, please do raise a Github issue. Although we will try our best to respond, we make no promises.
+This Open Source software is provided free of charge for you to explore and use without warranty (see the licence). If you find a problem or have a suggestion, please do raise a Github issue. Although we will try our best to respond as soon as we can, we can't promise.
 
-If you are using this in production and are looking for a service-level backed contract, or want to ensure that an issue is dealt with, professional services are available. OpusVL provide assistance, support, deployments, high availablilty and development of this software, please make contact using the details below:
+## Services
+
+For production use, service-level backed contracts and professional services are available on demand. OpusVL provide assistance, development, deployemnt and support of this software, please get in touch using the details below:
 
 - Telephone: +44 (0)1788 298 450
 - Email: hello@opusvl.com
 - Web: [https://opusvl.com](https://opusvl.com)
 
-## Services
-
-Professional services including hosting, implementation, and support are available from OpusVL through G-Cloud and other procurement frameworks.
+Professional services are available to UK Public Sector through G-Cloud and other procurement frameworks.
 
 ## Copyright and License
 
