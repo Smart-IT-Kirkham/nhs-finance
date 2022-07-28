@@ -28,7 +28,7 @@
     "depends": [
         "approval_hierarchy",
         "royalmarsden",
-        "uk_account_budget",
+        # "uk_account_budget",
         "account_financial_report",
         "account_mtd_vat",
         "uk_account_asset",

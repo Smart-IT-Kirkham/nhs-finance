@@ -501,7 +501,7 @@
             </field>
         </record>
         <!--    Budgets-->
-        <record
+        <!-- <record
             model="ir.ui.menu"
             id="uk_account_budget.menu_action_account_budget_view"
         >
@@ -516,7 +516,7 @@
                    ref('rm_approval_hierarchy.system_admin_role')
                    ])]"
             />
-        </record>
+        </record> -->
         <!--    Reconciliation-->
         <record model="ir.ui.menu" id="account.menu_action_manual_reconciliation">
             <field
@@ -529,7 +529,7 @@
             />
         </record>
         <!--    Budget Analysis-->
-        <record
+        <!-- <record
             model="ir.ui.menu"
             id="uk_account_budget.menu_action_account_budget_report_view"
         >
@@ -545,7 +545,7 @@
                    ref('rm_approval_hierarchy.system_admin_role')
                    ])]"
             />
-        </record>
+        </record> -->
         <!--    Tax Adjustments-->
         <record model="ir.ui.menu" id="account.menu_action_tax_adjustment">
             <field

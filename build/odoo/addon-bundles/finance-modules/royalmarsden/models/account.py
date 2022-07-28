@@ -101,7 +101,7 @@ class AccountAccount(models.Model):
         "account.account.hierarchy", domain=[("level_5", "=", True)]
     )
     category_id = fields.Many2one("account.account.category")
-    parent_id = fields.Many2one("account.account.parent")
+    # parent_id = fields.Many2one("account.account.parent")
     glgroup_id = fields.Many2one("account.account.glgroup", string="GL Group")
 
 
@@ -273,9 +273,9 @@ class AccountMoveLine(models.Model):
     account_category_id = fields.Many2one(
         related="account_id.category_id", readonly=True, store=True
     )
-    account_parent_id = fields.Many2one(
-        related="account_id.parent_id", readonly=True, store=True
-    )
+    # account_parent_id = fields.Many2one(
+    #     related="account_id.parent_id", readonly=True, store=True
+    # )
     account_glgroup_id = fields.Many2one(
         related="account_id.glgroup_id", readonly=True, store=True
     )

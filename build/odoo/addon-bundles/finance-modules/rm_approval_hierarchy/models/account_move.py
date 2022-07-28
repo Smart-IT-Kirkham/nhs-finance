@@ -6,8 +6,8 @@ from odoo import fields, models
 class AccountMoveLine(models.Model):
     _inherit = "account.move.line"
 
-    state = fields.Selection(
-        selection_add=[
-            ("waiting", "Waiting"),
-        ],
-    )
+    # state = fields.Selection(
+    #     selection_add=[
+    #         ('waiting', 'Waiting'),
+    #     ],
+    # )

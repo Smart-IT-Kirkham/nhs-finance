@@ -1,6 +1,6 @@
 from . import (
-    account_bank_statement,
     account,
+    account_bank_statement,
     account_journal,
     purchase,
     res_bank,
