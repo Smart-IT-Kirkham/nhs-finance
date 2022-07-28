@@ -21,8 +21,8 @@ fi
 
 source .env
 
-docker-compose build && \
-chmod ugo+rx init-db.sh && \
+docker-compose build
+chmod ugo+rx init-db.sh
 docker-compose up -d db
 
 docker-compose run --rm -u root odoo chown odoo: /etc/odoo /var/lib/odoo /mnt/extra-addons -Rv
