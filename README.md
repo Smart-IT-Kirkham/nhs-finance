@@ -46,7 +46,7 @@ POSTGRES_USER=postgres
 WORKERS=4
 ```
 
-Edit he `odoo.conf` file and change the `admin_passwd` to something more suitable. This is the Odoo "Master Password" used for database management, and will be needed later when you create an empty database.
+Edit the `odoo.conf` file and change the `admin_passwd` to something more suitable. This is the Odoo "Master Password" used for database management, and will be needed later when you create an empty database.
 
 ### Initialise the Docker Containers
 
